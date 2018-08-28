@@ -1,0 +1,15 @@
+<%= form_with(model: @url) do |f| %>
+  <div class='input-group mb-3'>
+    <div class='input-group-prepend'>
+      <span class='input-group-text' id='inputGroup-sizing-default'>Your URL</span>
+    </div>
+    <%= f.text_field :original_url, class: 'form-control' %>
+    <div class='input-group-append'>
+      <%= f.submit 'Shorten', class: 'btn btn-info' %>
+  </div>
+  </div>
+
+<% end %>
+
+
+

@@ -1,0 +1,17 @@
+<div class='form-group'>
+  <h3>Your original URL: </h3>
+  <input class='form-control' type='text' value='<%= @url.original_url %>' readonly>
+</div>
+
+<div class='form-group'>
+  <h3>Your shortened URL: </h3>
+  <div class="input-group mb-3">
+    <input id='short_url' type="text" class="form-control" value="<%= "#{request.base_url}/#{@url.short_url}" %>" readonly>
+    <div class="input-group-append">
+      <button class='clipboard-btn btn-secondary' data-clipboard-action='copy' data-clipboard-target='#short_url'>Copy</button>
+    </div>
+  </div>
+</div>
+
+
+
